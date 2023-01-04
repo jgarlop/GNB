@@ -1,0 +1,11 @@
+//
+//  GNB - Debug.xcconfig
+//  GNB
+//
+//  Created by Javier Garcia on 4/1/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "GNB - Shared.xcconfig"
