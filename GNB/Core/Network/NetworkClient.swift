@@ -12,7 +12,6 @@ protocol Networking {
 }
 
 enum NetworkError: Error {
-    case apiUrlNotFound
     case noResponse
     case invalidResponse
     case unknown(error: Error)
@@ -23,20 +22,15 @@ struct NetworkClient: Networking {
     let decoder: JSONDecoder = JSONDecoder()
 
     func request<T: Decodable>(operation: BaseOperation, type: T.Type) async throws -> T {
-        try await URLSession.shared.request(operation: operation, type: type)
+        let url = apiURL.appendingPathComponent(operation.endpoint.path)
+        return try await URLSession.shared.request(operation: operation, type: type, url: url)
     }
 }
 
 
 private extension URLSession {
-    func request<T: Decodable>(operation: BaseOperation, type: T.Type) async throws -> T {
-        guard let apiStringUrl = try? String.infoPlistValue(for: .apiUrl),
-              let apiURL = URL(string: apiStringUrl + operation.endpoint.path)
-        else {
-            throw NetworkError.apiUrlNotFound
-        }
-
-        var request = URLRequest(url: apiURL)
+    func request<T: Decodable>(operation: BaseOperation, type: T.Type, url: URL) async throws -> T {
+        var request = URLRequest(url: url)
         request.setValue(operation.mimeType.rawValue, forHTTPHeaderField: "Accept")
 
         guard let (data, response) = try? await URLSession.shared.data(for: request) else {
