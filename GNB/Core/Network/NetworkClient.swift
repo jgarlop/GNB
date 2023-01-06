@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NetworkClient {
+protocol Networking {
     func request<T: Decodable>(operation: BaseOperation, type: T.Type) async throws -> T
 }
 
@@ -18,13 +18,9 @@ enum NetworkError: Error {
     case unknown(error: Error)
 }
 
-final class NetworkClientImpl: NetworkClient {
+struct NetworkClient: Networking {
     let apiURL: URL
     let decoder: JSONDecoder = JSONDecoder()
-
-    init(apiURL: URL) {
-        self.apiURL = apiURL
-    }
 
     func request<T: Decodable>(operation: BaseOperation, type: T.Type) async throws -> T {
         try await URLSession.shared.request(operation: operation, type: type)
