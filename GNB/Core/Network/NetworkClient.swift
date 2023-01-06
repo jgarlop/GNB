@@ -40,7 +40,10 @@ private extension URLSession {
             throw NetworkError.apiUrlNotFound
         }
 
-        guard let (data, response) = try? await URLSession.shared.data(from: apiURL) else {
+        var request = URLRequest(url: apiURL)
+        request.setValue(operation.mimeType.rawValue, forHTTPHeaderField: "Accept")
+
+        guard let (data, response) = try? await URLSession.shared.data(for: request) else {
             throw NetworkError.noResponse
         }
 
