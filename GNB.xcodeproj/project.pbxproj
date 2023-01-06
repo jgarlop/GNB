@@ -16,6 +16,7 @@
 		CB77B5502965C9A3000E0444 /* GNB - Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CB77B5422965A221000E0444 /* GNB - Shared.xcconfig */; };
 		CB77B5512965C9A9000E0444 /* GNB - Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CB77B5452965C3B8000E0444 /* GNB - Debug.xcconfig */; };
 		CB77B5522965C9AC000E0444 /* GNB - Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CB77B5462965C3C4000E0444 /* GNB - Release.xcconfig */; };
+		CB7CE16429688B0500A33577 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB7CE16629688B0500A33577 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +39,11 @@
 		CB77B5422965A221000E0444 /* GNB - Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "GNB - Shared.xcconfig"; sourceTree = "<group>"; };
 		CB77B5452965C3B8000E0444 /* GNB - Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "GNB - Debug.xcconfig"; sourceTree = "<group>"; };
 		CB77B5462965C3C4000E0444 /* GNB - Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "GNB - Release.xcconfig"; sourceTree = "<group>"; };
-		CB77B5472965C465000E0444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB77B5472965C465000E0444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB77B54A2965C4A6000E0444 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CB77B54E2965C692000E0444 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CB7CE16529688B0500A33577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB7CE16729688B0B00A33577 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				CB285E2E296595D90003D90D /* GNB */,
-				CB285E33296595DA0003D90D /* Assets.xcassets */,
 				CB285E3F296595DA0003D90D /* GNBTests */,
 				CB285E2D296595D90003D90D /* Products */,
 			);
@@ -83,12 +85,10 @@
 		CB285E2E296595D90003D90D /* GNB */ = {
 			isa = PBXGroup;
 			children = (
-				CB77B5482965C493000E0444 /* Core */,
-				CB77B5472965C465000E0444 /* Info.plist */,
 				CB77B5432965A23F000E0444 /* Configuration */,
-				CB285E2F296595D90003D90D /* GNBApp.swift */,
+				CB77B5482965C493000E0444 /* Core */,
 				CB77B53B29659AAB000E0444 /* Modules */,
-				CB285E35296595DA0003D90D /* Preview Content */,
+				CB7CE16029688A7B00A33577 /* Resources */,
 			);
 			path = GNB;
 			sourceTree = "<group>";
@@ -183,6 +183,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CB7CE16029688A7B00A33577 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CE16129688AA600A33577 /* Localization */,
+				CB285E33296595DA0003D90D /* Assets.xcassets */,
+				CB285E2F296595D90003D90D /* GNBApp.swift */,
+				CB77B5472965C465000E0444 /* Info.plist */,
+				CB285E35296595DA0003D90D /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB7CE16129688AA600A33577 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CE16629688B0500A33577 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +267,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 				Base,
 			);
 			mainGroup = CB285E23296595D90003D90D;
@@ -266,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB77B5502965C9A3000E0444 /* GNB - Shared.xcconfig in Resources */,
+				CB7CE16429688B0500A33577 /* Localizable.strings in Resources */,
 				CB285E37296595DA0003D90D /* Preview Assets.xcassets in Resources */,
 				CB77B5512965C9A9000E0444 /* GNB - Debug.xcconfig in Resources */,
 				CB285E34296595DA0003D90D /* Assets.xcassets in Resources */,
@@ -310,6 +332,18 @@
 			targetProxy = CB285E3D296595DA0003D90D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB7CE16629688B0500A33577 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB7CE16529688B0500A33577 /* en */,
+				CB7CE16729688B0B00A33577 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB285E4E296595DA0003D90D /* Debug */ = {
@@ -434,11 +468,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GNB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = GCU8355XQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GNB/Info.plist;
+				INFOPLIST_FILE = GNB/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,11 +502,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GNB/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = GCU8355XQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GNB/Info.plist;
+				INFOPLIST_FILE = GNB/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

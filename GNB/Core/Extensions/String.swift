@@ -38,3 +38,17 @@ extension String {
         }
     }
 }
+
+extension String {
+
+    /// Returns a string from the file specified in "tableName", otherwise, using default Localizable.
+    public func localized(tableName: String = "Localizable") -> String {
+        NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
+    }
+
+    /// Returns a formatted string from the Localizable.strings using the variables passed as arguments.
+    /// - Parameter arguments: variables to format the string.
+    public func localized(_ arguments: CVarArg...) -> String {
+        return String(format: localized(), arguments: arguments)
+    }
+}
