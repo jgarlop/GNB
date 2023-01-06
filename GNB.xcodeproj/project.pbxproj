@@ -17,6 +17,14 @@
 		CB77B5512965C9A9000E0444 /* GNB - Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CB77B5452965C3B8000E0444 /* GNB - Debug.xcconfig */; };
 		CB77B5522965C9AC000E0444 /* GNB - Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CB77B5462965C3C4000E0444 /* GNB - Release.xcconfig */; };
 		CB7CE16429688B0500A33577 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB7CE16629688B0500A33577 /* Localizable.strings */; };
+		CB7CE16D2968966300A33577 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE16B2968966300A33577 /* NetworkClient.swift */; };
+		CB7CE16E2968966300A33577 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE16C2968966300A33577 /* Operation.swift */; };
+		CB7CE1702968CE6300A33577 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE16F2968CE6300A33577 /* Endpoint.swift */; };
+		CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE1712968CE8000A33577 /* MimeType.swift */; };
+		CB7CE1742968CFAA00A33577 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE1732968CFAA00A33577 /* HttpMethod.swift */; };
+		CB7CE1762968CFCE00A33577 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE1752968CFCE00A33577 /* Decoder.swift */; };
+		CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE1772968D28300A33577 /* JSONDecoder.swift */; };
+		CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7CE17D2968D8A500A33577 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		CB77B54E2965C692000E0444 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CB7CE16529688B0500A33577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB7CE16729688B0B00A33577 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB7CE16B2968966300A33577 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CB7CE16C2968966300A33577 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		CB7CE16F2968CE6300A33577 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CB7CE1712968CE8000A33577 /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		CB7CE1732968CFAA00A33577 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		CB7CE1752968CFCE00A33577 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		CB7CE1772968D28300A33577 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		CB7CE17D2968D8A500A33577 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,7 @@
 		CB285E5B29659A0C0003D90D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CB7CE17C2968D88F00A33577 /* Presentation */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -154,7 +171,9 @@
 		CB77B5482965C493000E0444 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CB7CE1792968D29500A33577 /* Decoder */,
 				CB77B5492965C49B000E0444 /* Extensions */,
+				CB7CE16A2968966300A33577 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -162,6 +181,7 @@
 		CB77B5492965C49B000E0444 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CB7CE1772968D28300A33577 /* JSONDecoder.swift */,
 				CB77B54A2965C4A6000E0444 /* String.swift */,
 			);
 			path = Extensions;
@@ -186,10 +206,10 @@
 		CB7CE16029688A7B00A33577 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CB7CE16129688AA600A33577 /* Localization */,
 				CB285E33296595DA0003D90D /* Assets.xcassets */,
 				CB285E2F296595D90003D90D /* GNBApp.swift */,
 				CB77B5472965C465000E0444 /* Info.plist */,
+				CB7CE16129688AA600A33577 /* Localization */,
 				CB285E35296595DA0003D90D /* Preview Content */,
 			);
 			path = Resources;
@@ -201,6 +221,34 @@
 				CB7CE16629688B0500A33577 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		CB7CE16A2968966300A33577 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CE16F2968CE6300A33577 /* Endpoint.swift */,
+				CB7CE1732968CFAA00A33577 /* HttpMethod.swift */,
+				CB7CE1712968CE8000A33577 /* MimeType.swift */,
+				CB7CE16B2968966300A33577 /* NetworkClient.swift */,
+				CB7CE16C2968966300A33577 /* Operation.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CB7CE1792968D29500A33577 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CE1752968CFCE00A33577 /* Decoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		CB7CE17C2968D88F00A33577 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CB7CE17D2968D8A500A33577 /* HomeScreen.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +358,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
+				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
+				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
+				CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */,
 				CB285E30296595D90003D90D /* GNBApp.swift in Sources */,
+				CB7CE1762968CFCE00A33577 /* Decoder.swift in Sources */,
+				CB7CE1742968CFAA00A33577 /* HttpMethod.swift in Sources */,
+				CB7CE16D2968966300A33577 /* NetworkClient.swift in Sources */,
+				CB7CE1702968CE6300A33577 /* Endpoint.swift in Sources */,
+				CB7CE16E2968966300A33577 /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
