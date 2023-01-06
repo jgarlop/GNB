@@ -5,3 +5,10 @@
   Created by Javier Garcia on 6/1/23.
   
 */
+
+// MARK: - Common
+"ENTER" = "Entrar";
+
+
+// MARK: - Welcome
+"WELCOME_TITLE" = "El banco más legendario del mundo";

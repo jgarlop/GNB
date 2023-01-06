@@ -6,3 +6,10 @@
   
 */
 
+// MARK: - Common
+"ENTER" = "Enter";
+
+
+// MARK: - Welcome
+"WELCOME_TITLE" = "World's most awesome bank";
+

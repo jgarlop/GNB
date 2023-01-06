@@ -40,7 +40,6 @@ extension String {
 }
 
 extension String {
-
     /// Returns a string from the file specified in "tableName", otherwise, using default Localizable.
     public func localized(tableName: String = "Localizable") -> String {
         NSLocalizedString(self, tableName: tableName, value: "**\(self)**", comment: "")
