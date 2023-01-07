@@ -13,3 +13,6 @@
 // MARK: - Welcome
 "WELCOME_TITLE" = "World's most awesome bank";
 
+// MARK: - Home
+"HOME_TITLE" = "Current GNB Products";
+

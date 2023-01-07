@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Endpoint {
-    var path: String
+protocol Endpoint {
+    var path: String { get }
 }

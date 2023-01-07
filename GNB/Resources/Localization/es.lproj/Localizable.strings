@@ -12,3 +12,6 @@
 
 // MARK: - Welcome
 "WELCOME_TITLE" = "El banco más legendario del mundo";
+
+// MARK: - Home
+"HOME_TITLE" = "Productos GNB";
