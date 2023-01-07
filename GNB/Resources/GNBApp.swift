@@ -11,7 +11,9 @@ import SwiftUI
 struct GNBApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeScreen()
+            NavigationView {
+                WelcomeViewFactory.buildWelcomeModule()
+            }
         }
     }
 }
