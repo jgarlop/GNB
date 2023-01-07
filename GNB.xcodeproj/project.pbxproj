@@ -40,6 +40,7 @@
 		CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */; };
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
+		CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B21296A0AE7004386A5 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewFactory.swift; sourceTree = "<group>"; };
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,8 +354,8 @@
 		CBE83B0A2969DA46004386A5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B20296A0ADC004386A5 /* Components */,
 				CBE83B0E2969DA8E004386A5 /* GNBViewModel.swift */,
-				CBE83B1A2969EAC0004386A5 /* LazyView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -398,6 +400,15 @@
 				CBE83B162969E778004386A5 /* AppConfiguration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CBE83B20296A0ADC004386A5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B1A2969EAC0004386A5 /* LazyView.swift */,
+				CBE83B21296A0AE7004386A5 /* LoadingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +525,7 @@
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
 				CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */,
 				CBE83B142969E47C004386A5 /* Injector.swift in Sources */,
+				CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,
 				CBE83AF52969D4CE004386A5 /* Transaction.swift in Sources */,

@@ -12,11 +12,20 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
     @StateObject var viewModel: ViewModel
 
     var body: some View {
-        List(viewModel.data.products, id: \.id) {
-            Text($0.sku)
+        LoadingView(loading: viewModel.data.isLoading) {
+            contentView
         }
         .onAppear { [weak viewModel] in
             viewModel?.trigger(.getProducts)
+        }
+    }
+}
+
+// MARK: - Subviews
+private extension HomeScreen {
+    var contentView: some View {
+        List(viewModel.data.products) {
+            Text($0.sku)
         }
         .navigationTitle(Text(verbatim: .homeNavTitle))
         .navigationBarTitleDisplayMode(.large)
@@ -25,11 +34,7 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
             rightNavBarButton
         }
     }
-}
 
-// MARK: - Subviews
-
-private extension HomeScreen {
     var rightNavBarButton: some View {
         Button {
             // TODO: Action

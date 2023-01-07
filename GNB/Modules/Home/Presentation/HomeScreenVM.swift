@@ -21,7 +21,9 @@ extension HomeScreenVM {
     func trigger(_ input: ViewInput) {
         switch input {
         case .getProducts:
-            getProducts()
+            Task {
+                await getProducts()
+            }
         }
     }
 }
@@ -29,6 +31,7 @@ extension HomeScreenVM {
 extension HomeScreenVM {
     struct ViewData {
         var products: [Product] = []
+        var isLoading: Bool = false
     }
 
     enum ViewInput {
@@ -38,19 +41,28 @@ extension HomeScreenVM {
 
 // MARK: - Private methods
 private extension HomeScreenVM {
-    func getProducts() {
-        Task {
-            do {
-                let products = try await getProductsUseCase.execute()
-                await setProducts(products)
-            } catch {
-                print(error)
-            }
+    func getProducts() async {
+        guard !data.isLoading else { return }
+        setLoadingState(true)
+        defer { setLoadingState(false) }
+
+        do {
+            let products = try await getProductsUseCase.execute()
+            setProducts(products)
+        } catch {
+            print(error)
         }
     }
 
-    @MainActor
     func setProducts(_ products: [Product]) {
-        data.products = products
+        DispatchQueue.main.async {
+            self.data.products = products
+        }
+    }
+
+    func setLoadingState(_ loading: Bool) {
+        DispatchQueue.main.async {
+            self.data.isLoading = loading
+        }
     }
 }
