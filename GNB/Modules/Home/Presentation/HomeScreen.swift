@@ -12,12 +12,13 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
     @StateObject var viewModel: ViewModel
 
     var body: some View {
-        List(viewModel.data.transactions, id: \.id) { transaction in
-            Text(transaction.product.sku)
+        List(viewModel.data.products, id: \.id) {
+            Text($0.sku)
         }
         .onAppear { [weak viewModel] in
-            viewModel?.trigger(.getTransactions)
+            viewModel?.trigger(.getProducts)
         }
+        .navigationTitle("Current GNB products")
     }
 }
 

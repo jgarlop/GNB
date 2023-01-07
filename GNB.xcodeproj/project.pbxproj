@@ -31,7 +31,7 @@
 		CBE83AFA2969D55E004386A5 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83AF92969D55E004386A5 /* HomeData.swift */; };
 		CBE83AFF2969D6EE004386A5 /* TransactionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83AFE2969D6EE004386A5 /* TransactionDTO.swift */; };
 		CBE83B022969D81E004386A5 /* TransactionsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B012969D81E004386A5 /* TransactionsEndpoint.swift */; };
-		CBE83B072969D98A004386A5 /* GetTransactionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B062969D98A004386A5 /* GetTransactionsUseCase.swift */; };
+		CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B062969D98A004386A5 /* GetProductsUseCase.swift */; };
 		CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B082969DA37004386A5 /* HomeScreenVM.swift */; };
 		CBE83B0F2969DA8E004386A5 /* GNBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B0E2969DA8E004386A5 /* GNBViewModel.swift */; };
 		CBE83B112969E2CD004386A5 /* HomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */; };
@@ -39,6 +39,7 @@
 		CBE83B172969E778004386A5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B162969E778004386A5 /* AppConfiguration.swift */; };
 		CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */; };
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
+		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +81,7 @@
 		CBE83AF92969D55E004386A5 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
 		CBE83AFE2969D6EE004386A5 /* TransactionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDTO.swift; sourceTree = "<group>"; };
 		CBE83B012969D81E004386A5 /* TransactionsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsEndpoint.swift; sourceTree = "<group>"; };
-		CBE83B062969D98A004386A5 /* GetTransactionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTransactionsUseCase.swift; sourceTree = "<group>"; };
+		CBE83B062969D98A004386A5 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
 		CBE83B082969DA37004386A5 /* HomeScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVM.swift; sourceTree = "<group>"; };
 		CBE83B0E2969DA8E004386A5 /* GNBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBViewModel.swift; sourceTree = "<group>"; };
 		CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFactory.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		CBE83B162969E778004386A5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewFactory.swift; sourceTree = "<group>"; };
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				CB7CE1772968D28300A33577 /* JSONDecoder.swift */,
 				CB77B54A2965C4A6000E0444 /* String.swift */,
+				CBE83B1E2969FC6A004386A5 /* Sequence.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,7 +327,7 @@
 		CBE83AFC2969D66A004386A5 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83B062969D98A004386A5 /* GetTransactionsUseCase.swift */,
+				CBE83B062969D98A004386A5 /* GetProductsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -506,9 +509,10 @@
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
-				CBE83B072969D98A004386A5 /* GetTransactionsUseCase.swift in Sources */,
+				CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
+				CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */,
 				CBE83B142969E47C004386A5 /* Injector.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,

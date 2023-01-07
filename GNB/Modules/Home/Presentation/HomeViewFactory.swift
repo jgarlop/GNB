@@ -11,15 +11,15 @@ import SwiftUI
 struct HomeViewFactory {
     func buildHomePreview() -> some View {
         let repository = HomeRepository(networkClient: Injector.shared.networking)
-        let useCase = GetTransactionsUseCase(dataRepository: repository)
-        let vm = HomeScreenVM(getTransactionsUseCase: useCase)
+        let useCase = GetProductsUseCase(dataRepository: repository)
+        let vm = HomeScreenVM(getProductsUseCase: useCase)
         return HomeScreen(viewModel: vm)
     }
 
     static func buildHomeModule() -> some View {
         let repository = HomeRepository(networkClient: Injector.shared.networking)
-        let useCase = GetTransactionsUseCase(dataRepository: repository)
-        let vm = HomeScreenVM(getTransactionsUseCase: useCase)
+        let useCase = GetProductsUseCase(dataRepository: repository)
+        let vm = HomeScreenVM(getProductsUseCase: useCase)
         return HomeScreen(viewModel: vm)
     }
 }

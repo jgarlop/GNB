@@ -7,6 +7,11 @@
 
 import Foundation
 
-struct Product {
+struct Product: Identifiable {
+    var id: String {
+        sku
+    }
+    
     let sku: String
+    let transactions: [Transaction]
 }

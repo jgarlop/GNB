@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HomeData {
-    func getTransactions() async throws -> [Transaction]
+    func getProducts() async throws -> [Product]
 }

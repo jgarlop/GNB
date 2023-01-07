@@ -9,10 +9,10 @@ import Foundation
 final class HomeScreenVM: GNBViewModel {
     @Published var data: ViewData = ViewData()
 
-    let getTransactionsUseCase: GetTransactionsUseCaseType
+    let getProductsUseCase: GetProductsUseCaseType
 
-    init(getTransactionsUseCase: GetTransactionsUseCaseType) {
-        self.getTransactionsUseCase = getTransactionsUseCase
+    init(getProductsUseCase: GetProductsUseCaseType) {
+        self.getProductsUseCase = getProductsUseCase
     }
 }
 
@@ -20,28 +20,28 @@ final class HomeScreenVM: GNBViewModel {
 extension HomeScreenVM {
     func trigger(_ input: ViewInput) {
         switch input {
-        case .getTransactions:
-            getTransactions()
+        case .getProducts:
+            getProducts()
         }
     }
 }
 
 extension HomeScreenVM {
     struct ViewData {
-        var transactions: [Transaction] = []
+        var products: [Product] = []
     }
 
     enum ViewInput {
-        case getTransactions
+        case getProducts
     }
 }
 
 private extension HomeScreenVM {
-    private func getTransactions() {
+    func getProducts() {
         Task {
             do {
-                let transactions = try await getTransactionsUseCase.execute()
-                await setTransactions(transactions)
+                let products = try await getProductsUseCase.execute()
+                await setProducts(products)
             } catch {
                 print(error)
             }
@@ -49,7 +49,7 @@ private extension HomeScreenVM {
     }
 
     @MainActor
-    private func setTransactions(_ transactions: [Transaction]) {
-        data.transactions = transactions
+    func setProducts(_ products: [Product]) {
+        data.products = products
     }
 }

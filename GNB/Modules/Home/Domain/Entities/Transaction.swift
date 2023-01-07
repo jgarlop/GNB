@@ -8,8 +8,7 @@
 import Foundation
 
 struct Transaction {
-    let id: String = UUID().uuidString
-    let product: Product
+    let productSku: Product.ID
     let transactionAmount: Decimal
     let currency: String
 }
