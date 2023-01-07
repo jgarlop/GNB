@@ -36,6 +36,7 @@ extension HomeScreenVM {
     }
 }
 
+// MARK: - Private methods
 private extension HomeScreenVM {
     func getProducts() {
         Task {

@@ -18,8 +18,32 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
         .onAppear { [weak viewModel] in
             viewModel?.trigger(.getProducts)
         }
-        .navigationTitle("Current GNB products")
+        .navigationTitle(Text(verbatim: .homeNavTitle))
+        .navigationBarTitleDisplayMode(.large)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            rightNavBarButton
+        }
     }
+}
+
+// MARK: - Subviews
+
+private extension HomeScreen {
+    var rightNavBarButton: some View {
+        Button {
+            // TODO: Action
+            print("Action")
+        } label : {
+            Image(systemName: .rightNavButtonImageName)
+        }
+    }
+}
+
+// MARK: - Constants
+private extension String {
+    static var homeNavTitle: Self { "HOME_TITLE".localized() }
+    static var rightNavButtonImageName: Self { "info.circle.fill" }
 }
 
 #if DEBUG
