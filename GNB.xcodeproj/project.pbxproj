@@ -37,6 +37,7 @@
 		CBE83B112969E2CD004386A5 /* HomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */; };
 		CBE83B142969E47C004386A5 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B132969E47C004386A5 /* Injector.swift */; };
 		CBE83B172969E778004386A5 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B162969E778004386A5 /* AppConfiguration.swift */; };
+		CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */; };
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFactory.swift; sourceTree = "<group>"; };
 		CBE83B132969E47C004386A5 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		CBE83B162969E778004386A5 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewFactory.swift; sourceTree = "<group>"; };
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				CB285E31296595D90003D90D /* WelcomeScreen.swift */,
+				CBE83B182969EA69004386A5 /* WelcomeViewFactory.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			files = (
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
+				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
 				CBE83B072969D98A004386A5 /* GetTransactionsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,

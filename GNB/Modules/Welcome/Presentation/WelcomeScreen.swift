@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
+    let viewFactory = WelcomeViewFactory()
+
     @State private var isContentVisible: Bool = false
+    @State private var isLinkActive: Bool = false
 
     var body: some View {
         ZStack {
@@ -54,17 +57,15 @@ private extension WelcomeScreen {
     }
 
     var enterButton: some View {
-        Button {
-            // TODO: Navigate to detail
-        } label: {
+        NavigationLink(destination: viewFactory.buildHomeView) {
             Text(verbatim: .buttonTitle)
                 .font(.title2)
+                .padding()
+                .foregroundColor(.accentColor)
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+                .cornerRadius(.buttonCornerRadius)
         }
-        .padding()
-        .foregroundColor(.accentColor)
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .cornerRadius(.buttonCornerRadius)
     }
 }
 
