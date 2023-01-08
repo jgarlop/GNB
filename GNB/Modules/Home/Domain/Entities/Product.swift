@@ -14,4 +14,16 @@ struct Product: Identifiable {
     
     let sku: String
     let transactions: [Transaction]
+
+    func totalAmount(in: String, exchangeFinder: ExchangeRateFindable) -> Decimal {
+        let amounts = transactions.compactMap {
+            exchangeFinder.convert(
+                originCurrency: $0.currency,
+                to: "EUR",
+                quantity: $0.transactionAmount
+            )
+        }
+        
+        return amounts.reduce(0, +)
+    }
 }

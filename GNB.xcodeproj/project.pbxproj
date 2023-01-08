@@ -41,8 +41,16 @@
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
 		CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B21296A0AE7004386A5 /* LoadingView.swift */; };
+		CBE83B25296B0C83004386A5 /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */; };
+		CBE83B2A296B0E38004386A5 /* ProductDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B29296B0E38004386A5 /* ProductDetailData.swift */; };
 		CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */; };
 		CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2F296B1003004386A5 /* ExchangeRate.swift */; };
+		CBE83B35296B14D5004386A5 /* RatesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */; };
+		CBE83B37296B1556004386A5 /* ProductDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */; };
+		CBE83B3A296B1645004386A5 /* GetExchangeRatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */; };
+		CBE83B3D296B188E004386A5 /* ProductDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */; };
+		CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */; };
+		CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */; };
 		CBE83B45296B80DA004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B44296B80DA004386A5 /* Array.swift */; };
 		CBE83B47296B80FE004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B46296B80FE004386A5 /* Array.swift */; };
 /* End PBXBuildFile section */
@@ -96,8 +104,14 @@
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
+		CBE83B29296B0E38004386A5 /* ProductDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailData.swift; sourceTree = "<group>"; };
 		CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDTO.swift; sourceTree = "<group>"; };
 		CBE83B2F296B1003004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesEndpoint.swift; sourceTree = "<group>"; };
+		CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailRepository.swift; sourceTree = "<group>"; };
+		CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRatesUseCase.swift; sourceTree = "<group>"; };
+		CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVM.swift; sourceTree = "<group>"; };
 		CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateFinderTests.swift; sourceTree = "<group>"; };
 		CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFinder.swift; sourceTree = "<group>"; };
 		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -198,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				CB285E5B29659A0C0003D90D /* Home */,
+				CBE83B23296B0C62004386A5 /* ProductDetail */,
 				CB285E59296599AA0003D90D /* Welcome */,
 			);
 			path = Modules;
@@ -439,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE83B2B296B0E80004386A5 /* Models */,
+				CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -453,10 +469,19 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		CBE83B28296B0E0B004386A5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B29296B0E38004386A5 /* ProductDetailData.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		CBE83B2B296B0E80004386A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */,
+				CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -467,6 +492,23 @@
 				CBE83B2F296B1003004386A5 /* ExchangeRate.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B38296B1625004386A5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CBE83B3B296B17A8004386A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */,
+				CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		CBE83B3E296B4133004386A5 /* ExchangeRateFinder */ = {
@@ -594,18 +636,22 @@
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
 				CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */,
+				CBE83B37296B1556004386A5 /* ProductDetailRepository.swift in Sources */,
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
 				CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */,
 				CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */,
 				CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
+				CBE83B3A296B1645004386A5 /* GetExchangeRatesUseCase.swift in Sources */,
 				CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */,
+				CBE83B3D296B188E004386A5 /* ProductDetailVM.swift in Sources */,
 				CBE83B142969E47C004386A5 /* Injector.swift in Sources */,
 				CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,
 				CBE83AF52969D4CE004386A5 /* Transaction.swift in Sources */,
+				CBE83B35296B14D5004386A5 /* RatesEndpoint.swift in Sources */,
 				CBE83B45296B80DA004386A5 /* Array.swift in Sources */,
 				CBE83B0F2969DA8E004386A5 /* GNBViewModel.swift in Sources */,
 				CBE83AFA2969D55E004386A5 /* HomeData.swift in Sources */,
@@ -619,9 +665,11 @@
 				CBE83B112969E2CD004386A5 /* HomeViewFactory.swift in Sources */,
 				CBE83B022969D81E004386A5 /* TransactionsEndpoint.swift in Sources */,
 				CB7CE1702968CE6300A33577 /* Endpoint.swift in Sources */,
+				CBE83B25296B0C83004386A5 /* ProductDetailScreen.swift in Sources */,
 				CB7CE16E2968966300A33577 /* Operation.swift in Sources */,
 				CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */,
 				CBE83AF82969D4E7004386A5 /* Product.swift in Sources */,
+				CBE83B2A296B0E38004386A5 /* ProductDetailData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
