@@ -41,6 +41,8 @@
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
 		CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B21296A0AE7004386A5 /* LoadingView.swift */; };
+		CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */; };
+		CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2F296B1003004386A5 /* ExchangeRate.swift */; };
 		CBE83B45296B80DA004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B44296B80DA004386A5 /* Array.swift */; };
 		CBE83B47296B80FE004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B46296B80FE004386A5 /* Array.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDTO.swift; sourceTree = "<group>"; };
+		CBE83B2F296B1003004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		CBE83B46296B80FE004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -417,6 +421,50 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		CBE83B23296B0C62004386A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B26296B0DF1004386A5 /* Data */,
+				CBE83B27296B0DFE004386A5 /* Domain */,
+				CBE83B3B296B17A8004386A5 /* Presentation */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		CBE83B26296B0DF1004386A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2B296B0E80004386A5 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CBE83B27296B0DFE004386A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2E296B0FEE004386A5 /* Entities */,
+				CBE83B28296B0E0B004386A5 /* Interfaces */,
+				CBE83B38296B1625004386A5 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE83B2B296B0E80004386A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBE83B2E296B0FEE004386A5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2F296B1003004386A5 /* ExchangeRate.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +574,8 @@
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
+				CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */,
+				CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */,
 				CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
