@@ -98,6 +98,8 @@
 		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDTO.swift; sourceTree = "<group>"; };
 		CBE83B2F296B1003004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateFinderTests.swift; sourceTree = "<group>"; };
+		CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFinder.swift; sourceTree = "<group>"; };
 		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		CBE83B46296B80FE004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +238,7 @@
 		CB77B54C2965C664000E0444 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B3E296B4133004386A5 /* ExchangeRateFinder */,
 				CB77B54D2965C669000E0444 /* Extensions */,
 			);
 			path = Core;
@@ -389,6 +392,7 @@
 		CBE83B0D2969DA64004386A5 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B41296B7E69004386A5 /* Services */,
 				CBE83B152969E76D004386A5 /* Configuration */,
 				CBE83B122969E42F004386A5 /* DI */,
 				CB77B5492965C49B000E0444 /* Extensions */,
@@ -463,6 +467,22 @@
 				CBE83B2F296B1003004386A5 /* ExchangeRate.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B3E296B4133004386A5 /* ExchangeRateFinder */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */,
+			);
+			path = ExchangeRateFinder;
+			sourceTree = "<group>";
+		};
+		CBE83B41296B7E69004386A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +593,7 @@
 			files = (
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
+				CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */,
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
 				CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */,
 				CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */,
@@ -609,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE83B47296B80FE004386A5 /* Array.swift in Sources */,
+				CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */,
 				CB77B54F2965C692000E0444 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
