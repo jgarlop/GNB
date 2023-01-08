@@ -16,7 +16,7 @@ extension StringExtensionsTests {
     func testApiInfoPlistValueSuccess() {
         // GIVEN
         let infoPlistKey: String.InfoPlistKeys = .apiUrl
-        let expected = "https://android-ios-service-herokuapp.com"
+        let expected = "https://android-ios-service.herokuapp.com"
 
         // WHEN
         let value = try? String.infoPlistValue(for: infoPlistKey)

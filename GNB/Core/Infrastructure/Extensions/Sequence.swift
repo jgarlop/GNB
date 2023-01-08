@@ -15,4 +15,10 @@ extension Sequence {
     }
 }
 
+extension Sequence where Element: Hashable {
+    func uniqued() -> [Element] {
+        Array(Set(self))
+    }
+}
+
 

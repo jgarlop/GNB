@@ -41,6 +41,8 @@
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
 		CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B21296A0AE7004386A5 /* LoadingView.swift */; };
+		CBE83B45296B80DA004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B44296B80DA004386A5 /* Array.swift */; };
+		CBE83B47296B80FE004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B46296B80FE004386A5 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CBE83B46296B80FE004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,9 +221,10 @@
 		CB77B5492965C49B000E0444 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B44296B80DA004386A5 /* Array.swift */,
 				CB7CE1772968D28300A33577 /* JSONDecoder.swift */,
-				CB77B54A2965C4A6000E0444 /* String.swift */,
 				CBE83B1E2969FC6A004386A5 /* Sequence.swift */,
+				CB77B54A2965C4A6000E0444 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				CB77B54E2965C692000E0444 /* String.swift */,
+				CBE83B46296B80FE004386A5 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,
 				CBE83AF52969D4CE004386A5 /* Transaction.swift in Sources */,
+				CBE83B45296B80DA004386A5 /* Array.swift in Sources */,
 				CBE83B0F2969DA8E004386A5 /* GNBViewModel.swift in Sources */,
 				CBE83AFA2969D55E004386A5 /* HomeData.swift in Sources */,
 				CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */,
@@ -551,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE83B47296B80FE004386A5 /* Array.swift in Sources */,
 				CB77B54F2965C692000E0444 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
