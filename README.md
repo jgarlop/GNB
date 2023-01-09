@@ -19,6 +19,7 @@
  * Configuration files
  * Async/await
  * UILayer with SwiftUI
+ * Developed following a gitflow workflow for the repository
  
 There is a Welcome screen, that leads to a Home screen where we can see alist of products. Each product row is tapable, which leads to a new detail screen in which we can see the total amount for the transactions of that product, in EUR currency, and the list of transactions as well.
 
