@@ -41,6 +41,24 @@
 		CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1A2969EAC0004386A5 /* LazyView.swift */; };
 		CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B1E2969FC6A004386A5 /* Sequence.swift */; };
 		CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B21296A0AE7004386A5 /* LoadingView.swift */; };
+		CBE83B25296B0C83004386A5 /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */; };
+		CBE83B2A296B0E38004386A5 /* ProductDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B29296B0E38004386A5 /* ProductDetailData.swift */; };
+		CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */; };
+		CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B2F296B1003004386A5 /* ExchangeRate.swift */; };
+		CBE83B35296B14D5004386A5 /* RatesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */; };
+		CBE83B37296B1556004386A5 /* ProductDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */; };
+		CBE83B3A296B1645004386A5 /* GetExchangeRatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */; };
+		CBE83B3D296B188E004386A5 /* ProductDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */; };
+		CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */; };
+		CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */; };
+		CBE83B45296B80DA004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B44296B80DA004386A5 /* Array.swift */; };
+		CBE83B47296B80FE004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B46296B80FE004386A5 /* Array.swift */; };
+		CBE83B4E296C3224004386A5 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */; };
+		CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B50296C32C0004386A5 /* ExchangeRate.swift */; };
+		CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B52296C35EE004386A5 /* Decimal.swift */; };
+		CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B54296C4615004386A5 /* ProductCellView.swift */; };
+		CBE83B57296C486A004386A5 /* ProductDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */; };
+		CBE83B59296C4F64004386A5 /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B58296C4F64004386A5 /* TransactionCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +110,24 @@
 		CBE83B1A2969EAC0004386A5 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		CBE83B1E2969FC6A004386A5 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		CBE83B21296A0AE7004386A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
+		CBE83B29296B0E38004386A5 /* ProductDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailData.swift; sourceTree = "<group>"; };
+		CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDTO.swift; sourceTree = "<group>"; };
+		CBE83B2F296B1003004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesEndpoint.swift; sourceTree = "<group>"; };
+		CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailRepository.swift; sourceTree = "<group>"; };
+		CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRatesUseCase.swift; sourceTree = "<group>"; };
+		CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVM.swift; sourceTree = "<group>"; };
+		CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateFinderTests.swift; sourceTree = "<group>"; };
+		CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFinder.swift; sourceTree = "<group>"; };
+		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CBE83B46296B80FE004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTests.swift; sourceTree = "<group>"; };
+		CBE83B50296C32C0004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		CBE83B52296C35EE004386A5 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		CBE83B54296C4615004386A5 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailFactory.swift; sourceTree = "<group>"; };
+		CBE83B58296C4F64004386A5 /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +188,8 @@
 		CB285E3F296595DA0003D90D /* GNBTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B4F296C329E004386A5 /* Mocks */,
+				CBE83B4A296C31FE004386A5 /* Modules */,
 				CB77B54C2965C664000E0444 /* Core */,
 			);
 			path = GNBTests;
@@ -188,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CB285E5B29659A0C0003D90D /* Home */,
+				CBE83B23296B0C62004386A5 /* ProductDetail */,
 				CB285E59296599AA0003D90D /* Welcome */,
 			);
 			path = Modules;
@@ -217,9 +256,11 @@
 		CB77B5492965C49B000E0444 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B44296B80DA004386A5 /* Array.swift */,
+				CBE83B52296C35EE004386A5 /* Decimal.swift */,
 				CB7CE1772968D28300A33577 /* JSONDecoder.swift */,
-				CB77B54A2965C4A6000E0444 /* String.swift */,
 				CBE83B1E2969FC6A004386A5 /* Sequence.swift */,
+				CB77B54A2965C4A6000E0444 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,6 +268,7 @@
 		CB77B54C2965C664000E0444 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B3E296B4133004386A5 /* ExchangeRateFinder */,
 				CB77B54D2965C669000E0444 /* Extensions */,
 			);
 			path = Core;
@@ -236,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				CB77B54E2965C692000E0444 /* String.swift */,
+				CBE83B46296B80FE004386A5 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +326,7 @@
 		CB7CE17C2968D88F00A33577 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B5B296C55B6004386A5 /* Cells */,
 				CB7CE17D2968D8A500A33577 /* HomeScreen.swift */,
 				CBE83B082969DA37004386A5 /* HomeScreenVM.swift */,
 				CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */,
@@ -312,7 +356,6 @@
 		CBE83AF62969D4D2004386A5 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83AF72969D4E7004386A5 /* Product.swift */,
 				CBE83AF42969D4CE004386A5 /* Transaction.swift */,
 			);
 			path = Entities;
@@ -372,6 +415,7 @@
 		CBE83B0C2969DA50004386A5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B48296C2D7C004386A5 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -382,6 +426,7 @@
 				CBE83B152969E76D004386A5 /* Configuration */,
 				CBE83B122969E42F004386A5 /* DI */,
 				CB77B5492965C49B000E0444 /* Extensions */,
+				CBE83B41296B7E69004386A5 /* Services */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -409,6 +454,151 @@
 				CBE83B21296A0AE7004386A5 /* LoadingView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		CBE83B23296B0C62004386A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B26296B0DF1004386A5 /* Data */,
+				CBE83B27296B0DFE004386A5 /* Domain */,
+				CBE83B3B296B17A8004386A5 /* Presentation */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		CBE83B26296B0DF1004386A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2B296B0E80004386A5 /* Models */,
+				CBE83B36296B1556004386A5 /* ProductDetailRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CBE83B27296B0DFE004386A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2E296B0FEE004386A5 /* Entities */,
+				CBE83B28296B0E0B004386A5 /* Interfaces */,
+				CBE83B38296B1625004386A5 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE83B28296B0E0B004386A5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B29296B0E38004386A5 /* ProductDetailData.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CBE83B2B296B0E80004386A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */,
+				CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBE83B2E296B0FEE004386A5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B2F296B1003004386A5 /* ExchangeRate.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B38296B1625004386A5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B39296B1645004386A5 /* GetExchangeRatesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CBE83B3B296B17A8004386A5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B5A296C55A9004386A5 /* Cells */,
+				CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */,
+				CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */,
+				CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CBE83B3E296B4133004386A5 /* ExchangeRateFinder */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B3F296B4143004386A5 /* ExchangeRateFinderTests.swift */,
+			);
+			path = ExchangeRateFinder;
+			sourceTree = "<group>";
+		};
+		CBE83B41296B7E69004386A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBE83B48296C2D7C004386A5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83AF72969D4E7004386A5 /* Product.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B4A296C31FE004386A5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4B296C3203004386A5 /* ProductDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CBE83B4B296C3203004386A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4C296C3217004386A5 /* Domain */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		CBE83B4C296C3217004386A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE83B4F296C329E004386A5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B50296C32C0004386A5 /* ExchangeRate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CBE83B5A296C55A9004386A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B58296C4F64004386A5 /* TransactionCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CBE83B5B296C55B6004386A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B54296C4615004386A5 /* ProductCellView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,21 +709,33 @@
 			files = (
 				CBE83B092969DA37004386A5 /* HomeScreenVM.swift in Sources */,
 				CB77B54B2965C4A6000E0444 /* String.swift in Sources */,
+				CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */,
+				CBE83B37296B1556004386A5 /* ProductDetailRepository.swift in Sources */,
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
+				CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */,
+				CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */,
+				CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */,
 				CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,
+				CBE83B3A296B1645004386A5 /* GetExchangeRatesUseCase.swift in Sources */,
 				CBE83B1F2969FC6A004386A5 /* Sequence.swift in Sources */,
+				CBE83B3D296B188E004386A5 /* ProductDetailVM.swift in Sources */,
 				CBE83B142969E47C004386A5 /* Injector.swift in Sources */,
 				CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */,
+				CBE83B59296C4F64004386A5 /* TransactionCellView.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,
 				CBE83AF52969D4CE004386A5 /* Transaction.swift in Sources */,
+				CBE83B35296B14D5004386A5 /* RatesEndpoint.swift in Sources */,
+				CBE83B45296B80DA004386A5 /* Array.swift in Sources */,
 				CBE83B0F2969DA8E004386A5 /* GNBViewModel.swift in Sources */,
 				CBE83AFA2969D55E004386A5 /* HomeData.swift in Sources */,
 				CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */,
 				CB285E30296595D90003D90D /* GNBApp.swift in Sources */,
+				CBE83B57296C486A004386A5 /* ProductDetailFactory.swift in Sources */,
 				CB7CE1762968CFCE00A33577 /* Decoder.swift in Sources */,
+				CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */,
 				CB7CE1742968CFAA00A33577 /* HttpMethod.swift in Sources */,
 				CBE83B172969E778004386A5 /* AppConfiguration.swift in Sources */,
 				CB7CE16D2968966300A33577 /* NetworkClient.swift in Sources */,
@@ -541,9 +743,11 @@
 				CBE83B112969E2CD004386A5 /* HomeViewFactory.swift in Sources */,
 				CBE83B022969D81E004386A5 /* TransactionsEndpoint.swift in Sources */,
 				CB7CE1702968CE6300A33577 /* Endpoint.swift in Sources */,
+				CBE83B25296B0C83004386A5 /* ProductDetailScreen.swift in Sources */,
 				CB7CE16E2968966300A33577 /* Operation.swift in Sources */,
 				CBE83B1B2969EAC0004386A5 /* LazyView.swift in Sources */,
 				CBE83AF82969D4E7004386A5 /* Product.swift in Sources */,
+				CBE83B2A296B0E38004386A5 /* ProductDetailData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +755,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE83B4E296C3224004386A5 /* ExchangeRateTests.swift in Sources */,
+				CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */,
+				CBE83B47296B80FE004386A5 /* Array.swift in Sources */,
+				CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */,
 				CB77B54F2965C692000E0444 /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,10 +906,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GCU8355XQ8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GNB/Resources/Info.plist;
@@ -717,6 +925,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jgarlop.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -732,10 +941,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GCU8355XQ8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GNB/Resources/Info.plist;
@@ -751,6 +960,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jgarlop.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

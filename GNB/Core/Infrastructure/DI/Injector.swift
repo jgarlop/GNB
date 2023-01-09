@@ -18,4 +18,8 @@ final class Injector {
     lazy var networking: Networking = {
         NetworkClient(apiURL: appConfiguration.apiURL)
     }()
+
+    lazy var exchangeRateFinder: ExchangeRateFindable = {
+        ExchangeRateFinder(exchangeRates: [])
+    }()
 }

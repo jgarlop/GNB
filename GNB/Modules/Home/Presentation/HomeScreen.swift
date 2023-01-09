@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.ViewData, HomeScreenVM.ViewInput> {
-    
+
+    private let viewFactory = HomeViewFactory()
     @StateObject var viewModel: ViewModel
 
     var body: some View {
@@ -24,8 +25,10 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
 // MARK: - Subviews
 private extension HomeScreen {
     var contentView: some View {
-        List(viewModel.data.products) {
-            Text($0.sku)
+        List(viewModel.data.products) { product in
+            NavigationLink(destination: viewFactory.buildProductDetailView(with: product)) {
+                ProductCellView(product: product)
+            }
         }
         .navigationTitle(Text(verbatim: .homeNavTitle))
         .navigationBarTitleDisplayMode(.large)
