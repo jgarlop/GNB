@@ -1,0 +1,11 @@
+//
+//  GNB.xcconfig
+//  GNB
+//
+//  Created by Javier Garcia on 4/1/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_URL = https:/$()/android-ios-service.herokuapp.com

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  GNB
+
+  Created by Javier Garcia on 6/1/23.
+  
+*/
+
+// MARK: - Common
+"ENTER" = "Enter";
+
+
+// MARK: - Welcome
+"WELCOME_TITLE" = "World's most awesome bank";
+
+// MARK: - Home
+"HOME_TITLE" = "Current GNB Products";
+
+// MARK: - Product Detail
+"PRODUCT_DETAIL_AMOUNT" = "Total amount from transactions";
+
+// MARK: - About
+"ABOUT_DESCRIPTION" = "Made by jgarlop";
+"ABOUT_LINKEDIN" = "https://linkedin.com/in/javigarcialopez";
+
