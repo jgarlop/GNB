@@ -61,6 +61,7 @@
 		CBE83B59296C4F64004386A5 /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B58296C4F64004386A5 /* TransactionCellView.swift */; };
 		CBE83B61296C6EA5004386A5 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B60296C6EA5004386A5 /* AboutScreen.swift */; };
 		CBE83B63296C729C004386A5 /* AboutViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B62296C729C004386A5 /* AboutViewFactory.swift */; };
+		CBE83B69296C7699004386A5 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B68296C7699004386A5 /* ProductTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		CBE83B58296C4F64004386A5 /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 		CBE83B60296C6EA5004386A5 /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		CBE83B62296C729C004386A5 /* AboutViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewFactory.swift; sourceTree = "<group>"; };
+		CBE83B68296C7699004386A5 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,8 +387,8 @@
 		CBE83AFD2969D6B1004386A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83AFE2969D6EE004386A5 /* TransactionDTO.swift */,
 				CBE83B002969D7AE004386A5 /* Endpoint */,
+				CBE83AFE2969D6EE004386A5 /* TransactionDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -501,8 +503,8 @@
 		CBE83B2B296B0E80004386A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B6D296C7E6F004386A5 /* Endpoints */,
 				CBE83B2C296B0E89004386A5 /* ExchangeRateDTO.swift */,
-				CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -643,8 +645,25 @@
 		CBE83B66296C7666004386A5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B67296C7690004386A5 /* Entities */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE83B67296C7690004386A5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B68296C7699004386A5 /* ProductTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B6D296C7E6F004386A5 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B34296B14D5004386A5 /* RatesEndpoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -808,6 +827,7 @@
 				CBE83B47296B80FE004386A5 /* Array.swift in Sources */,
 				CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */,
 				CB77B54F2965C692000E0444 /* String.swift in Sources */,
+				CBE83B69296C7699004386A5 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
