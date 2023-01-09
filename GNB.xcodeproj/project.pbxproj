@@ -192,9 +192,9 @@
 		CB285E3F296595DA0003D90D /* GNBTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB77B54C2965C664000E0444 /* Core */,
 				CBE83B4F296C329E004386A5 /* Mocks */,
 				CBE83B4A296C31FE004386A5 /* Modules */,
-				CB77B54C2965C664000E0444 /* Core */,
 			);
 			path = GNBTests;
 			sourceTree = "<group>";
@@ -273,8 +273,8 @@
 		CB77B54C2965C664000E0444 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83B3E296B4133004386A5 /* ExchangeRateFinder */,
-				CB77B54D2965C669000E0444 /* Extensions */,
+				CBE83B66296C7666004386A5 /* Domain */,
+				CBE83B64296C7623004386A5 /* Infrastructure */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 		CB77B54D2965C669000E0444 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CB77B54E2965C692000E0444 /* String.swift */,
 				CBE83B46296B80FE004386A5 /* Array.swift */,
+				CB77B54E2965C692000E0444 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -621,6 +621,30 @@
 				CBE83B62296C729C004386A5 /* AboutViewFactory.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CBE83B64296C7623004386A5 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CB77B54D2965C669000E0444 /* Extensions */,
+				CBE83B65296C7632004386A5 /* Services */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CBE83B65296C7632004386A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B3E296B4133004386A5 /* ExchangeRateFinder */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBE83B66296C7666004386A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
