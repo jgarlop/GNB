@@ -14,7 +14,7 @@ final class ProductDetailVM: GNBViewModel {
     var exchangeFinder: ExchangeRateFindable
     var currencyTarget: String = "EUR"
 
-    @Published var data: ViewData = ViewData()
+    @Published var data: ViewData
 
     init(
         product: Product,
@@ -24,6 +24,7 @@ final class ProductDetailVM: GNBViewModel {
         self.product = product
         self.getExchangeRatesUseCase = getExchangeRateUseCase
         self.exchangeFinder = rateFinder
+        self.data = ViewData(product: product)
     }
 }
 
@@ -44,6 +45,7 @@ extension ProductDetailVM {
     }
 
     struct ViewData {
+        let product: Product
         var transactionsAmount: Decimal = .zero
         var isLoading: Bool = false
     }

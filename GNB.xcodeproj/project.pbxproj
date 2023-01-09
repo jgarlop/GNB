@@ -57,6 +57,7 @@
 		CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B50296C32C0004386A5 /* ExchangeRate.swift */; };
 		CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B52296C35EE004386A5 /* Decimal.swift */; };
 		CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B54296C4615004386A5 /* ProductCellView.swift */; };
+		CBE83B57296C486A004386A5 /* ProductDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		CBE83B50296C32C0004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		CBE83B52296C35EE004386A5 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
 		CBE83B54296C4615004386A5 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +521,7 @@
 			children = (
 				CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */,
 				CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */,
+				CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				CBE83AFA2969D55E004386A5 /* HomeData.swift in Sources */,
 				CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */,
 				CB285E30296595D90003D90D /* GNBApp.swift in Sources */,
+				CBE83B57296C486A004386A5 /* ProductDetailFactory.swift in Sources */,
 				CB7CE1762968CFCE00A33577 /* Decoder.swift in Sources */,
 				CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */,
 				CB7CE1742968CFAA00A33577 /* HttpMethod.swift in Sources */,

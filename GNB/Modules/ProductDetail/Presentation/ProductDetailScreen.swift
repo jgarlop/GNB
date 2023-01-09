@@ -8,8 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct ProductDetailScreen: View {
+struct ProductDetailScreen<ViewModel>: View where ViewModel: GNBViewModel<ProductDetailVM.ViewData, ProductDetailVM.ViewInput> {
+    
+    @StateObject var viewModel: ViewModel
+
     var body: some View {
-        EmptyView()
+        VStack {
+            Text(viewModel.data.product.sku)
+        }
+        .navigationTitle(viewModel.data.product.sku)
     }
 }

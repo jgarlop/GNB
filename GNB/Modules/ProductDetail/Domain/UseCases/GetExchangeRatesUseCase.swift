@@ -11,7 +11,7 @@ protocol GetExchangeRatesUseCaseType {
     func execute() async throws -> [ExchangeRate]
 }
 
-struct GetExchangeRatesUseCase {
+struct GetExchangeRatesUseCase: GetExchangeRatesUseCaseType {
     let repository: ProductDetailRepository
 
     func execute() async throws -> [ExchangeRate] {
