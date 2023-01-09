@@ -17,4 +17,4 @@
 "HOME_TITLE" = "Productos GNB";
 
 // MARK: - Product Detail
-"PRODUCT_DETAIL_AMOUNT" = "Total de transacciones (en %@)";
+"PRODUCT_DETAIL_AMOUNT" = "Total de transacciones";

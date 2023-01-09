@@ -64,6 +64,6 @@ private extension CGFloat {
 }
 private extension String {
     static func totalAmountTitle(currency: String) -> Self {
-        "PRODUCT_DETAIL_AMOUNT".localized(currency)
+        "PRODUCT_DETAIL_AMOUNT".localized()
     }
 }

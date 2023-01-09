@@ -10,8 +10,14 @@ import Foundation
 final class ProductDetailVM: GNBViewModel {
     let product: Product
     let getExchangeRatesUseCase: GetExchangeRatesUseCaseType
-
     var exchangeFinder: ExchangeRateFindable
+
+    lazy var numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.currencyCode = data.currencyTarget.lowercased()
+        return numberFormatter
+    }()
 
     @Published var data: ViewData
 
@@ -46,7 +52,7 @@ extension ProductDetailVM {
     struct ViewData {
         let product: Product
         var currencyTarget: String = "EUR"
-        var transactionsAmount: Decimal = .zero
+        var transactionsAmount: String = ""
         var isLoading: Bool = false
     }
 }
@@ -66,8 +72,16 @@ private extension ProductDetailVM {
 
     func setTransactionsAmount(_ decimal: Decimal) {
         DispatchQueue.main.async {
-            self.data.transactionsAmount = decimal.bankersRounding(scale: 2)
+            guard let formattedCurrency = self.formatCurrency(decimal) else {
+                return
+            }
+
+            self.data.transactionsAmount = formattedCurrency
         }
+    }
+
+    func formatCurrency(_ amount: Decimal) -> String? {
+        numberFormatter.string(from: NSDecimalNumber(decimal: amount))
     }
 }
 
