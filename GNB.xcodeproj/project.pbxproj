@@ -416,10 +416,10 @@
 		CBE83B0D2969DA64004386A5 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83B41296B7E69004386A5 /* Services */,
 				CBE83B152969E76D004386A5 /* Configuration */,
 				CBE83B122969E42F004386A5 /* DI */,
 				CB77B5492965C49B000E0444 /* Extensions */,
+				CBE83B41296B7E69004386A5 /* Services */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
