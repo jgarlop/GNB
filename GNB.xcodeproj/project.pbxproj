@@ -326,10 +326,10 @@
 		CB7CE17C2968D88F00A33577 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B5B296C55B6004386A5 /* Cells */,
 				CB7CE17D2968D8A500A33577 /* HomeScreen.swift */,
 				CBE83B082969DA37004386A5 /* HomeScreenVM.swift */,
 				CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */,
-				CBE83B54296C4615004386A5 /* ProductCellView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -521,10 +521,10 @@
 		CBE83B3B296B17A8004386A5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B5A296C55A9004386A5 /* Cells */,
 				CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */,
 				CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */,
 				CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */,
-				CBE83B58296C4F64004386A5 /* TransactionCellView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -583,6 +583,22 @@
 				CBE83B50296C32C0004386A5 /* ExchangeRate.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CBE83B5A296C55A9004386A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B58296C4F64004386A5 /* TransactionCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CBE83B5B296C55B6004386A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B54296C4615004386A5 /* ProductCellView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -890,10 +906,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GCU8355XQ8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GNB/Resources/Info.plist;
@@ -909,6 +925,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jgarlop.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -924,10 +941,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNB/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = GCU8355XQ8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GNB/Resources/Info.plist;
@@ -943,6 +960,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jgarlop.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

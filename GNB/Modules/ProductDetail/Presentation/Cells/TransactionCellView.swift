@@ -15,6 +15,7 @@ struct TransactionCellView: View {
         HStack {
             Text(verbatim: "\(transaction.transactionAmount.bankersRounding(scale: 2))")
             Text(transaction.currency)
+                .fontWeight(.bold)
         }
     }
 }

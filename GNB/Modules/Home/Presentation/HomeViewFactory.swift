@@ -17,7 +17,9 @@ struct HomeViewFactory {
     }
 
     func buildProductDetailView(with product: Product) -> some View {
-        ProductDetailFactory.buildProductDetailModule(with: product)
+        LazyView {
+            ProductDetailFactory.buildProductDetailModule(with: product)
+        }
     }
 
     static func buildHomeModule() -> some View {

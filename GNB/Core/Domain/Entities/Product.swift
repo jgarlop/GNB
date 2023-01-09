@@ -14,7 +14,9 @@ struct Product: Identifiable {
     
     let sku: String
     let transactions: [Transaction]
+}
 
+extension Product {
     func totalAmount(in currency: String, exchangeFinder: ExchangeRateFindable) -> Decimal {
         let amounts = transactions.compactMap {
             exchangeFinder.convert(
@@ -23,7 +25,7 @@ struct Product: Identifiable {
                 quantity: $0.transactionAmount
             )
         }
-        
+
         return amounts.reduce(0, +)
     }
 }
