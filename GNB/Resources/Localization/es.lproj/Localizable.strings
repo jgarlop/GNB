@@ -18,3 +18,7 @@
 
 // MARK: - Product Detail
 "PRODUCT_DETAIL_AMOUNT" = "Total de transacciones";
+
+// MARK: - About
+"ABOUT_DESCRIPTION" = "Made by jgarlop";
+"ABOUT_LINKEDIN" = "https://linkedin.com/in/javigarcialopez";
