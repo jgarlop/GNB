@@ -12,9 +12,14 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
     private let viewFactory = HomeViewFactory()
     @StateObject var viewModel: ViewModel
 
+    @State private var showAbout: Bool = false
+
     var body: some View {
         LoadingView(loading: viewModel.data.isLoading) {
             contentView
+        }
+        .popover(isPresented: $showAbout, arrowEdge: .top) {
+            viewFactory.buildAboutView()
         }
         .onAppear { [weak viewModel] in
             viewModel?.trigger(.getProducts)
@@ -40,8 +45,7 @@ private extension HomeScreen {
 
     var rightNavBarButton: some View {
         Button {
-            // TODO: Action
-            print("Action")
+            showAbout = true
         } label : {
             Image(systemName: .rightNavButtonImageName)
         }

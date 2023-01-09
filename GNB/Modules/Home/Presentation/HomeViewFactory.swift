@@ -22,6 +22,12 @@ struct HomeViewFactory {
         }
     }
 
+    func buildAboutView() -> some View {
+        LazyView {
+            AboutViewFactory.buildAboutModule()
+        }
+    }
+
     static func buildHomeModule() -> some View {
         let repository = HomeRepository(networkClient: Injector.shared.networking)
         let useCase = GetProductsUseCase(dataRepository: repository)
