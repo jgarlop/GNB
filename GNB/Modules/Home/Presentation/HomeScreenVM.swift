@@ -42,7 +42,8 @@ extension HomeScreenVM {
 // MARK: - Private methods
 private extension HomeScreenVM {
     func getProducts() async {
-        guard !data.isLoading else { return }
+        // Avoiding fetching when loading or already fetched (backend returns a random list every time)
+        guard !data.isLoading, data.products.isEmpty else { return }
         setLoadingState(true)
         defer { setLoadingState(false) }
 
