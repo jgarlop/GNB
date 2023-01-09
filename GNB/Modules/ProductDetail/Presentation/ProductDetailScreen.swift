@@ -14,8 +14,23 @@ struct ProductDetailScreen<ViewModel>: View where ViewModel: GNBViewModel<Produc
 
     var body: some View {
         VStack {
-            Text(viewModel.data.product.sku)
+            Text(verbatim: String.totalAmountTitle(currency: viewModel.data.currencyTarget))
+            Text(verbatim: "\(viewModel.data.transactionsAmount)")
+                .fontWeight(.bold)
+            List(viewModel.data.product.transactions) {
+                TransactionCellView(transaction: $0)
+            }
         }
         .navigationTitle(viewModel.data.product.sku)
+        .onAppear {
+            viewModel.trigger(.getTransactionsAmount)
+        }
+    }
+}
+
+// MARK: - Constants
+private extension String {
+    static func totalAmountTitle(currency: String) -> Self { // MARK: - Product Detail
+        "PRODUCT_DETAIL_AMOUNT".localized(currency)
     }
 }

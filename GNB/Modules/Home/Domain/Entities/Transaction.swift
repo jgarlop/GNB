@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct Transaction {
+struct Transaction: Identifiable {
+    let id: String = UUID().uuidString
     let productSku: Product.ID
     let transactionAmount: Decimal
     let currency: String
 }
+

@@ -12,7 +12,6 @@ final class ProductDetailVM: GNBViewModel {
     let getExchangeRatesUseCase: GetExchangeRatesUseCaseType
 
     var exchangeFinder: ExchangeRateFindable
-    var currencyTarget: String = "EUR"
 
     @Published var data: ViewData
 
@@ -46,6 +45,7 @@ extension ProductDetailVM {
 
     struct ViewData {
         let product: Product
+        var currencyTarget: String = "EUR"
         var transactionsAmount: Decimal = .zero
         var isLoading: Bool = false
     }
@@ -57,9 +57,16 @@ private extension ProductDetailVM {
             let exchangeRates = try await getExchangeRatesUseCase.execute()
             exchangeFinder.exchangeRates = exchangeRates
 
-            let total = product.totalAmount(in: currencyTarget, exchangeFinder: exchangeFinder)
+            let total = product.totalAmount(in: data.currencyTarget, exchangeFinder: exchangeFinder)
+            setTransactionsAmount(total)
         } catch {
             print(error.localizedDescription)
+        }
+    }
+
+    func setTransactionsAmount(_ decimal: Decimal) {
+        DispatchQueue.main.async {
+            self.data.transactionsAmount = decimal.bankersRounding(scale: 2)
         }
     }
 }

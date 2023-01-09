@@ -58,6 +58,7 @@
 		CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B52296C35EE004386A5 /* Decimal.swift */; };
 		CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B54296C4615004386A5 /* ProductCellView.swift */; };
 		CBE83B57296C486A004386A5 /* ProductDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */; };
+		CBE83B59296C4F64004386A5 /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B58296C4F64004386A5 /* TransactionCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		CBE83B52296C35EE004386A5 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
 		CBE83B54296C4615004386A5 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailFactory.swift; sourceTree = "<group>"; };
+		CBE83B58296C4F64004386A5 /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +524,7 @@
 				CBE83B24296B0C83004386A5 /* ProductDetailScreen.swift */,
 				CBE83B3C296B188E004386A5 /* ProductDetailVM.swift */,
 				CBE83B56296C486A004386A5 /* ProductDetailFactory.swift */,
+				CBE83B58296C4F64004386A5 /* TransactionCellView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				CBE83B3D296B188E004386A5 /* ProductDetailVM.swift in Sources */,
 				CBE83B142969E47C004386A5 /* Injector.swift in Sources */,
 				CBE83B22296A0AE7004386A5 /* LoadingView.swift in Sources */,
+				CBE83B59296C4F64004386A5 /* TransactionCellView.swift in Sources */,
 				CB285E32296595D90003D90D /* WelcomeScreen.swift in Sources */,
 				CBE83AF22969D493004386A5 /* HomeRepository.swift in Sources */,
 				CBE83AF52969D4CE004386A5 /* Transaction.swift in Sources */,
