@@ -11,11 +11,6 @@
     <img src="https://img.shields.io/badge/-async%2Fawait-orange">
 </p>
 
-<p align="center">
-  <a href="#Content">Content</a>
-  <a href="#Improvements">Improvements</a>
-</p>
-
 ## Content
  * Clean architecture + MVVM for the presentation layer
  * No third party libraries used
@@ -26,14 +21,16 @@
  * UILayer with SwiftUI
  
 There is a Welcome screen, that leads to a Home screen where we can see alist of products. Each product row is tapable, which leads to a new detail screen in which we can see the total amount for the transactions of that product, in EUR currency, and the list of transactions as well.
-<detail>
-<summary> Preview </summary>
 
+<details>
+  <summary>Video preview</summary>
+  
+https://user-images.githubusercontent.com/48457119/211371324-2a7c5cbf-0b6e-4834-bbde-e66a9ea9a0d3.mp4
 
-</detail>
+</details>
 
 ## Improvements
-#####The app was developed just in a few hours so there is room for improvements:
+The app was developed just in a few hours so there is room for improvements:
 - Add UI Tests.
 - Separation of the different modules into their single respective SPM Module, so we can apply a modular architecture.
 - The exchange Rate algorithm to look for a conversion is pretty ad-hoc. It would be nice to abstract the functionlaity as template so it could be used in an abstract object (Tree or Graph, for example)
