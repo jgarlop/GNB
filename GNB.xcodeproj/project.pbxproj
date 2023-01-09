@@ -53,6 +53,9 @@
 		CBE83B43296B7E7F004386A5 /* ExchangeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */; };
 		CBE83B45296B80DA004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B44296B80DA004386A5 /* Array.swift */; };
 		CBE83B47296B80FE004386A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B46296B80FE004386A5 /* Array.swift */; };
+		CBE83B4E296C3224004386A5 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */; };
+		CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B50296C32C0004386A5 /* ExchangeRate.swift */; };
+		CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B52296C35EE004386A5 /* Decimal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,9 @@
 		CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeFinder.swift; sourceTree = "<group>"; };
 		CBE83B44296B80DA004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		CBE83B46296B80FE004386A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTests.swift; sourceTree = "<group>"; };
+		CBE83B50296C32C0004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		CBE83B52296C35EE004386A5 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,8 @@
 		CB285E3F296595DA0003D90D /* GNBTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B4F296C329E004386A5 /* Mocks */,
+				CBE83B4A296C31FE004386A5 /* Modules */,
 				CB77B54C2965C664000E0444 /* Core */,
 			);
 			path = GNBTests;
@@ -243,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE83B44296B80DA004386A5 /* Array.swift */,
+				CBE83B52296C35EE004386A5 /* Decimal.swift */,
 				CB7CE1772968D28300A33577 /* JSONDecoder.swift */,
 				CBE83B1E2969FC6A004386A5 /* Sequence.swift */,
 				CB77B54A2965C4A6000E0444 /* String.swift */,
@@ -340,7 +349,6 @@
 		CBE83AF62969D4D2004386A5 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				CBE83AF72969D4E7004386A5 /* Product.swift */,
 				CBE83AF42969D4CE004386A5 /* Transaction.swift */,
 			);
 			path = Entities;
@@ -400,6 +408,7 @@
 		CBE83B0C2969DA50004386A5 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CBE83B48296C2D7C004386A5 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -525,6 +534,46 @@
 				CBE83B42296B7E7F004386A5 /* ExchangeFinder.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CBE83B48296C2D7C004386A5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83AF72969D4E7004386A5 /* Product.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CBE83B4A296C31FE004386A5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4B296C3203004386A5 /* ProductDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CBE83B4B296C3203004386A5 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4C296C3217004386A5 /* Domain */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		CBE83B4C296C3217004386A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE83B4F296C329E004386A5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CBE83B50296C32C0004386A5 /* ExchangeRate.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,6 +707,7 @@
 				CB7CE17E2968D8A500A33577 /* HomeScreen.swift in Sources */,
 				CB285E30296595D90003D90D /* GNBApp.swift in Sources */,
 				CB7CE1762968CFCE00A33577 /* Decoder.swift in Sources */,
+				CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */,
 				CB7CE1742968CFAA00A33577 /* HttpMethod.swift in Sources */,
 				CBE83B172969E778004386A5 /* AppConfiguration.swift in Sources */,
 				CB7CE16D2968966300A33577 /* NetworkClient.swift in Sources */,
@@ -677,6 +727,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE83B4E296C3224004386A5 /* ExchangeRateTests.swift in Sources */,
+				CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */,
 				CBE83B47296B80FE004386A5 /* Array.swift in Sources */,
 				CBE83B40296B4143004386A5 /* ExchangeRateFinderTests.swift in Sources */,
 				CB77B54F2965C692000E0444 /* String.swift in Sources */,
