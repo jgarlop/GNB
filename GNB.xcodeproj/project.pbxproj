@@ -56,6 +56,7 @@
 		CBE83B4E296C3224004386A5 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */; };
 		CBE83B51296C32C0004386A5 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B50296C32C0004386A5 /* ExchangeRate.swift */; };
 		CBE83B53296C35EE004386A5 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B52296C35EE004386A5 /* Decimal.swift */; };
+		CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE83B54296C4615004386A5 /* ProductCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		CBE83B4D296C3224004386A5 /* ExchangeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTests.swift; sourceTree = "<group>"; };
 		CBE83B50296C32C0004386A5 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		CBE83B52296C35EE004386A5 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		CBE83B54296C4615004386A5 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 				CB7CE17D2968D8A500A33577 /* HomeScreen.swift */,
 				CBE83B082969DA37004386A5 /* HomeScreenVM.swift */,
 				CBE83B102969E2CD004386A5 /* HomeViewFactory.swift */,
+				CBE83B54296C4615004386A5 /* ProductCellView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				CBE83B192969EA69004386A5 /* WelcomeViewFactory.swift in Sources */,
 				CBE83B30296B1004004386A5 /* ExchangeRate.swift in Sources */,
 				CBE83B2D296B0E89004386A5 /* ExchangeRateDTO.swift in Sources */,
+				CBE83B55296C4615004386A5 /* ProductCellView.swift in Sources */,
 				CBE83B072969D98A004386A5 /* GetProductsUseCase.swift in Sources */,
 				CB7CE1722968CE8000A33577 /* MimeType.swift in Sources */,
 				CB7CE1782968D28300A33577 /* JSONDecoder.swift in Sources */,

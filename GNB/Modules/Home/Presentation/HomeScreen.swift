@@ -25,7 +25,7 @@ struct HomeScreen<ViewModel>: View where ViewModel: GNBViewModel<HomeScreenVM.Vi
 private extension HomeScreen {
     var contentView: some View {
         List(viewModel.data.products) {
-            Text($0.sku)
+            ProductCellView(product: $0)
         }
         .navigationTitle(Text(verbatim: .homeNavTitle))
         .navigationBarTitleDisplayMode(.large)
